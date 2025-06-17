@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Color Changing Background</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #212121;
+        color: #fff;
+        text-align: center;
+      }
+      .container {
+        display: flex;
+        gap: 15px;
+      }
+      button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+      
+      #start {
+        background-color: #4caf50;
+        color: white;
+      }
+      #start:hover{
+        background-color:  #44bd48;
+        cursor: pointer;
+      }
+      #stop:hover{
+        background-color:  #ef1c0d;
+      }
+      #stop {
+        background-color: #f44336;
+        cursor: pointer;
+        color: white;
+      }
+      
+    </style>
+  </head>
+  <body>
+    
+    <h1>Click Start to Change Background Color Every Second</h1>
+    <div class="container">
+      <button id="start">Start</button>
+      <button id="stop">Stop</button>
+    </div>
+    <div id="loader"></div>
+    
+    <script src="index.js">
+      
+    </script>
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="../styles.css" />
+    <style>
+        body {
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        height: 100vh;
+        margin: 0; 
+        flex-direction: column; 
+        background-color: #212121;
+        color: #fff;
+      }
+        #stop, #start{
+            width: 44px;
+            height: 33px; 
+            margin: 5px;
+        }
+        
+    </style>
+  </head>
+  <body>
+    <h1>Start should change the Background color every second</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <script src="index.js"></script>
+  </body>
+</html> -->

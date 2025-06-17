@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Verdana';
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #212122;
+    position: relative; 
+    
+}
+#playground{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100vh;
+    left: 0px;
+}
+.car {
+    width: 70px;
+    height: 70px;
+    border-radius: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute; 
+    z-index: 9999999999999;
+}
+
+#start, #reset {
+    cursor: pointer;
+    z-index: 9999999999;
+}
+
+.car img {
+    width: 190px; 
+    height: 100px;
+    border-radius: 55px;
+    object-fit: cover; 
+}
+#controls{
+    /* position: absolute; */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 22px;
+    padding: 20px;
+}
+
+#start{
+    background-color: rgb(34, 182, 34);
+    color: rgb(232, 228, 228);
+    padding: 10px 10px;
+    font-weight: 800;
+    font-size: 19px;
+    border-radius: 16px;
+    border: solid  rgb(19, 170, 19) 1px;
+}
+#start:hover{
+    background-color: rgb(49, 199, 49);
+
+}
+
+#reset{
+    background-color: rgb(207, 49, 5);
+    color: rgb(239, 235, 235);
+    padding: 10px 10px;
+    font-weight: 800;
+    font-size: 19px;
+    border-radius: 16px;
+    border: solid  rgb(207, 49, 5) 1px;
+}
+#reset:hover{
+    background-color: rgb(240, 53, 53);
+    border: solid  rgb(207, 49, 5) 1px;
+}
+.car{
+    position: absolute;
+    gap: 10px;
+}
+.bomb{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-image: url("./bomb.jpg");
+    background-position: center center;
+    background-size: 40px;
+    border-radius: 50%;
+    background-color: white;
+    background-repeat: no-repeat;
+    
+}
+.score{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.score{
+    font-size: 19px;
+    margin-top: 22px;
+    margin-left: 9px;
+}
